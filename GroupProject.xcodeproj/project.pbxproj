@@ -77,6 +77,10 @@
 		4D8A5A40232C223200609C8F /* GroupProject */ = {
 			isa = PBXGroup;
 			children = (
+				6435E6CE232C2A3600920334 /* Models */,
+				6435E6D0232C2A8B00920334 /* View */,
+				6435E6CF232C2A7500920334 /* APIClient */,
+				6435E6CD232C2A1E00920334 /* View Controllers */,
 				4D8A5A41232C223200609C8F /* AppDelegate.swift */,
 				4D8A5A43232C223200609C8F /* ViewController.swift */,
 				4D8A5A45232C223200609C8F /* Main.storyboard */,
@@ -94,6 +98,34 @@
 				4D8A5A58232C223300609C8F /* Info.plist */,
 			);
 			path = GroupProjectTests;
+			sourceTree = "<group>";
+		};
+		6435E6CD232C2A1E00920334 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		6435E6CE232C2A3600920334 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		6435E6CF232C2A7500920334 /* APIClient */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = APIClient;
+			sourceTree = "<group>";
+		};
+		6435E6D0232C2A8B00920334 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
