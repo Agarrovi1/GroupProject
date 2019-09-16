@@ -1,5 +1,5 @@
 //
-//  YearInputViewController.swift
+//  CalculatorViewController.swift
 //  GroupProject
 //
 //  Created by hildy abreu on 9/16/19.
@@ -8,8 +8,27 @@
 
 import UIKit
 
-class YearInputViewController: UIViewController {
+class CalculatorViewController: UIViewController {
+    
+    
+    @IBOutlet weak var userInputTextField: NSLayoutConstraint!
+    
+    @IBOutlet weak var LabelOne: UILabel!
+    
+    
+    @IBOutlet weak var LabelTwo: UILabel!
+    
+    @IBOutlet weak var amountLabel: UILabel!
+    
+    
+    @IBOutlet weak var percentageLabel: UILabel!
+    @IBOutlet weak var percentageStepper: UIStepper!
+    @IBAction func interestStepper(_ sender: Any) {
+    }
+    
 
+    @IBOutlet weak var nextButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
