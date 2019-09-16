@@ -30,6 +30,10 @@ class CalculatorViewController: UIViewController {
 
     @IBOutlet weak var nextButton: UIButton!
     
+    
+    
+    @IBOutlet weak var calculatorTableView: UITableView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
