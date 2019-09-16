@@ -333,6 +333,7 @@ Payments</string>
                         <outlet property="LabelOne" destination="hRf-PL-xnW" id="Uy0-fD-LMm"/>
                         <outlet property="LabelTwo" destination="HsY-xT-aRw" id="YYw-H0-jEX"/>
                         <outlet property="amountLabel" destination="fQG-K9-f70" id="jdN-I1-NUZ"/>
+                        <outlet property="calculatorTableView" destination="gQi-7j-MCU" id="HQE-X1-4tC"/>
                         <outlet property="nextButton" destination="6nK-gT-QgY" id="TXy-pJ-VQH"/>
                         <outlet property="percentageLabel" destination="hEL-0N-u0B" id="POG-BO-hzx"/>
                         <outlet property="stepper" destination="bJv-49-wg3" id="lz7-7o-9Bt"/>
