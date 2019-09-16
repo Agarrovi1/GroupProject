@@ -1,24 +1,139 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="hMv-EO-BZ4">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--Year Input View Controller-->
+        <scene sceneID="j3I-Sw-GUD">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                <viewController id="hMv-EO-BZ4" customClass="YearInputViewController" customModule="GroupProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="pgZ-vh-vxu">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Current Age" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tmP-Gw-Kvp">
+                                <rect key="frame" x="20" y="183" width="134" height="35"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="Arl-ed-AMT"/>
+                                    <constraint firstAttribute="width" constant="134" id="chC-rS-Iz5"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Target Age" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gD1-7K-P9K">
+                                <rect key="frame" x="260" y="183" width="134" height="35"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="134" id="VUm-UH-esE"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="35" id="XHk-BF-PDw"/>
+                                    <constraint firstAttribute="height" constant="35" id="mmx-Wu-srH"/>
+                                    <constraint firstAttribute="width" constant="134" id="vvg-LV-SST"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PwC-J2-6HQ">
+                                <rect key="frame" x="39" y="238" width="97" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="97" id="SGZ-49-vOU"/>
+                                    <constraint firstAttribute="height" constant="30" id="WAc-PE-Y0D"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="liP-MU-V6f">
+                                <rect key="frame" x="279" y="238" width="97" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="97" id="7Zk-dd-UKz"/>
+                                    <constraint firstAttribute="height" constant="30" id="EtI-Ym-LCY"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="aCJ-58-MAC"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="97" id="hwm-fz-QaX"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="EZE-VM-3oI">
+                                <rect key="frame" x="20" y="461" width="134" height="70"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="134" id="e4a-jQ-wt8"/>
+                                    <constraint firstAttribute="height" constant="70" id="wRL-Mc-WzU"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="17"/>
+                                <state key="normal">
+                                    <string key="title">Calculate
+Total</string>
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="G0q-XM-kiM">
+                                <rect key="frame" x="260" y="461" width="134" height="70"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="7E8-Ly-czc"/>
+                                    <constraint firstAttribute="width" constant="134" id="LGj-dm-ZSU"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="17"/>
+                                <state key="normal">
+                                    <string key="title">Calculate
+Monthly
+Payments</string>
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.61634981964794122" green="0.86082249365482233" blue="0.78285129316216995" alpha="0.98670269691780821" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="gD1-7K-P9K" firstAttribute="top" secondItem="lBH-Ck-rTH" secondAttribute="top" constant="95" id="A7D-du-3jo"/>
+                            <constraint firstItem="tmP-Gw-Kvp" firstAttribute="leading" secondItem="lBH-Ck-rTH" secondAttribute="leading" constant="20" id="EdM-kU-DHu"/>
+                            <constraint firstItem="G0q-XM-kiM" firstAttribute="top" secondItem="liP-MU-V6f" secondAttribute="bottom" constant="193" id="FcQ-k8-UTY"/>
+                            <constraint firstItem="tmP-Gw-Kvp" firstAttribute="top" secondItem="lBH-Ck-rTH" secondAttribute="top" constant="95" id="JNy-4O-6O5"/>
+                            <constraint firstItem="gD1-7K-P9K" firstAttribute="trailing" secondItem="pgZ-vh-vxu" secondAttribute="trailingMargin" id="JQy-vI-kts"/>
+                            <constraint firstItem="EZE-VM-3oI" firstAttribute="leading" secondItem="lBH-Ck-rTH" secondAttribute="leading" constant="20" id="NR7-xJ-d2c"/>
+                            <constraint firstItem="PwC-J2-6HQ" firstAttribute="top" secondItem="tmP-Gw-Kvp" secondAttribute="bottom" constant="20" id="PiH-vU-WZh"/>
+                            <constraint firstItem="EZE-VM-3oI" firstAttribute="top" secondItem="PwC-J2-6HQ" secondAttribute="bottom" constant="193" id="RPJ-8F-w8t"/>
+                            <constraint firstItem="lBH-Ck-rTH" firstAttribute="trailing" secondItem="G0q-XM-kiM" secondAttribute="trailing" constant="20" id="Sz6-C3-RIc"/>
+                            <constraint firstItem="PwC-J2-6HQ" firstAttribute="leading" secondItem="lBH-Ck-rTH" secondAttribute="leading" constant="39" id="ap1-Go-PZ7"/>
+                            <constraint firstItem="liP-MU-V6f" firstAttribute="top" secondItem="gD1-7K-P9K" secondAttribute="bottom" constant="20" id="ftP-Z5-xOq"/>
+                            <constraint firstItem="liP-MU-V6f" firstAttribute="leading" secondItem="PwC-J2-6HQ" secondAttribute="trailing" constant="143" id="wEH-Z8-PRa"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="lBH-Ck-rTH"/>
                     </view>
+                    <navigationItem key="navigationItem" id="fzn-Hd-LWe"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="M0Y-zD-0ta" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1788.4057971014495" y="20.758928571428569"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="GZK-oV-p22">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="gcO-oz-Pee" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="9Ug-YL-Nxm">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="hMv-EO-BZ4" kind="relationship" relationship="rootViewController" id="oqg-ea-PT4"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Bzq-Q7-RxV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="878.26086956521749" y="20.758928571428569"/>
         </scene>
     </scenes>
 </document>
