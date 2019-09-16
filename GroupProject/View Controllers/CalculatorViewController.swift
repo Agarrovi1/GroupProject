@@ -11,7 +11,8 @@ import UIKit
 class CalculatorViewController: UIViewController {
     
     
-    @IBOutlet weak var userInputTextField: NSLayoutConstraint!
+
+    @IBOutlet weak var userInputTextField: UITextField!
     
     @IBOutlet weak var LabelOne: UILabel!
     
@@ -23,7 +24,7 @@ class CalculatorViewController: UIViewController {
     
     @IBOutlet weak var percentageLabel: UILabel!
     @IBOutlet weak var percentageStepper: UIStepper!
-    @IBAction func interestStepper(_ sender: Any) {
+    @IBAction func interestStepper(_ sender: UIStepper) {
     }
     
 
