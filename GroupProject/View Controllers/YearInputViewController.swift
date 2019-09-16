@@ -25,18 +25,39 @@ class YearInputViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
     }
+  
+  
+  
+  override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    guard let currentAgeUserInputTextField = currentAgeUserInputTextField.text else {return}
+    guard currentAgeUserInputTextField != "" else {return}
+    guard let current = Int(currentAgeUserInputTextField) else {return}
+    
+    guard let targetAgeUserInputTextField = targetAgeUserInputTextField.text else {return}
+    guard targetAgeUserInputTextField != "" else {return}
+    guard let target = Int(targetAgeUserInputTextField) else {return}
+    
+    switch segue.identifier {
+    case "totalSegue":
+      guard let destinationVC = segue.destination as? CalculatorViewController else {return}
+      destinationVC.lengthOfTime = target - current
+      destinationVC.mode = .total
+    case "monthlySegue":
+      guard let destinationVC = segue.destination as? CalculatorViewController else {return}
+      destinationVC.lengthOfTime = target - current
+      destinationVC.mode = .monthly
+    default:
+      fatalError("Unexpected segue identifier")
     }
-    */
-
+  }
+  
+  
+  
 }
+
+//
+//guard let currentAgeUserInputTextField.text < targetAgeUserInputTextField.text else {fatalError("incorrect user input")}
+//
+//
