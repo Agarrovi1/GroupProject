@@ -193,7 +193,7 @@ Payments</string>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="419" id="wa6-6k-Pup"/>
                                 </constraints>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="82" id="Xn1-2s-XUZ" customClass="calcTableViewCell" customModule="GroupProject" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="calcCell" rowHeight="82" id="Xn1-2s-XUZ" customClass="calcTableViewCell" customModule="GroupProject" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="414" height="82"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Xn1-2s-XUZ" id="bHC-5u-GJD">
@@ -333,6 +333,7 @@ Payments</string>
                         <outlet property="LabelOne" destination="hRf-PL-xnW" id="Uy0-fD-LMm"/>
                         <outlet property="LabelTwo" destination="HsY-xT-aRw" id="YYw-H0-jEX"/>
                         <outlet property="amountLabel" destination="fQG-K9-f70" id="jdN-I1-NUZ"/>
+                        <outlet property="calculatorTableView" destination="gQi-7j-MCU" id="HQE-X1-4tC"/>
                         <outlet property="nextButton" destination="6nK-gT-QgY" id="TXy-pJ-VQH"/>
                         <outlet property="percentageLabel" destination="hEL-0N-u0B" id="POG-BO-hzx"/>
                         <outlet property="stepper" destination="bJv-49-wg3" id="lz7-7o-9Bt"/>

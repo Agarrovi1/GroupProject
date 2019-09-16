@@ -14,6 +14,8 @@ struct InterestCalculator {
     var total: Double = 0
     var monthlyDeposits: Double
     
+    static let defaultCalc = InterestCalculator(goal: Double(), interestRate: Double(), numOfYears: Int(), total: Double(), monthlyDeposits: Double())
+    
     static func calculateFromGoal(goal: Double, interestRate: Double, numOfYear: Int) -> InterestCalculator {
         let power = pow((1 + (interestRate / 12)), Double(12 * numOfYear))
         let monthly = power / goal * 12 * Double(numOfYear)
