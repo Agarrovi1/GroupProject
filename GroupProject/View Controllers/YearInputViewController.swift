@@ -44,6 +44,7 @@ class YearInputViewController: UIViewController {
       guard let destinationVC = segue.destination as? CalculatorViewController else {return}
       destinationVC.lengthOfTime = target - current
       destinationVC.mode = .total
+    
     case "monthlySegue":
       guard let destinationVC = segue.destination as? CalculatorViewController else {return}
       destinationVC.lengthOfTime = target - current
