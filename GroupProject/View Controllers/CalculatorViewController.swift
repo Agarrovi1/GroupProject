@@ -23,7 +23,10 @@ class CalculatorViewController: UIViewController {
     
     
     @IBOutlet weak var percentageLabel: UILabel!
+    
     @IBOutlet weak var percentageStepper: UIStepper!
+    
+    
     @IBAction func interestStepper(_ sender: UIStepper) {
         makeNewCalculation()
     }
