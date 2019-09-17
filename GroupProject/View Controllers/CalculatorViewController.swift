@@ -28,7 +28,7 @@ class CalculatorViewController: UIViewController {
     
     
     @IBAction func interestStepper(_ sender: UIStepper) {
-//        updatePercentageLabel()
+        ratePercentageLabel()
         makeNewCalculation()
     }
     
@@ -85,13 +85,16 @@ class CalculatorViewController: UIViewController {
         userInputTextField.delegate = self
         calculatorTableView.dataSource = self
     }
+    func ratePercentageLabel() {
+        percentageLabel.text = "Rate:\(percentageStepper.value)%"
+    }
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
         setDelegates()
         changeLabel()
-//        updatePercentageLabel()
+        ratePercentageLabel()
         // Do any additional setup after loading the view.
     }
     

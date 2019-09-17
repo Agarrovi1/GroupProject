@@ -337,6 +337,7 @@ Payments</string>
                         <outlet property="amountLabel" destination="fQG-K9-f70" id="jdN-I1-NUZ"/>
                         <outlet property="calculatorTableView" destination="gQi-7j-MCU" id="HQE-X1-4tC"/>
                         <outlet property="nextButton" destination="6nK-gT-QgY" id="TXy-pJ-VQH"/>
+                        <outlet property="percentageLabel" destination="OIQ-ty-aY4" id="KOM-NH-3y3"/>
                         <outlet property="percentageStepper" destination="bJv-49-wg3" id="mdS-Tq-Nds"/>
                         <outlet property="userInputTextField" destination="rcT-YG-Vy3" id="KRr-HN-Iou"/>
                     </connections>
