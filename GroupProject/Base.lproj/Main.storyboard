@@ -372,7 +372,7 @@ Payments</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dup-se-bj7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3237.68115942029" y="21.428571428571427"/>
+            <point key="canvasLocation" x="3496" y="50"/>
         </scene>
         <!--Launch Screen Controller-->
         <scene sceneID="xKP-JS-eSc">
