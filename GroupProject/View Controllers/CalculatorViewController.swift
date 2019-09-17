@@ -28,6 +28,7 @@ class CalculatorViewController: UIViewController {
     
     
     @IBAction func interestStepper(_ sender: UIStepper) {
+        ratePercentageLabel()
         makeNewCalculation()
     }
     
@@ -67,18 +68,25 @@ class CalculatorViewController: UIViewController {
         case .monthly:
             var calculator = InterestCalculator.calculateFromMonthly(monthly: value, interestRate: percentageStepper.value/100, numOfYear: time)
             arrOfCalculations = calculator.makeAsArray()
-            amountLabel.text = "$ \(calculator.goal)"
+            amountLabel.text = "$ \(round(calculator.goal * 100) / 100)"
         case .total:
             var calculator = InterestCalculator.calculateFromGoal(goal: value, interestRate: percentageStepper.value/100, numOfYear: time)
             arrOfCalculations = calculator.makeAsArray()
-            amountLabel.text = "$ \(calculator.monthlyDeposits)"
+            amountLabel.text = "$ \(round(calculator.monthlyDeposits * 100) / 100)"
         }
         
+        
     }
-    
+//    func updatePercentageLabel() {
+//        percentageLabel.text = "Rate: \(percentageStepper.value)%"
+//    }
+//
     func setDelegates() {
         userInputTextField.delegate = self
         calculatorTableView.dataSource = self
+    }
+    func ratePercentageLabel() {
+        percentageLabel.text = "Rate:\(percentageStepper.value)%"
     }
     
     
@@ -86,6 +94,7 @@ class CalculatorViewController: UIViewController {
         super.viewDidLoad()
         setDelegates()
         changeLabel()
+        ratePercentageLabel()
         // Do any additional setup after loading the view.
     }
     
