@@ -44,6 +44,18 @@ class CalculatorViewController: UIViewController {
         }
     }
     
+    func changeLabel() {
+        
+        switch mode {
+        case .monthly:
+            LabelOne.text = "Monthly"
+            LabelTwo.text = "Total Amount"
+        case .total:
+            LabelOne.text = "Total Amount"
+            LabelTwo.text = "Monthly"
+        }
+    }
+    
     func makeNewCalculation() {
         
         guard let userInputTextField = userInputTextField.text else {return}
@@ -55,9 +67,11 @@ class CalculatorViewController: UIViewController {
         case .monthly:
             var calculator = InterestCalculator.calculateFromMonthly(monthly: value, interestRate: percentageStepper.value, numOfYear: time)
             arrOfCalculations = calculator.makeAsArray()
+            amountLabel.text = "$ \(calculator.goal)"
         case .total:
             var calculator = InterestCalculator.calculateFromGoal(goal: value, interestRate: percentageStepper.value, numOfYear: time)
             arrOfCalculations = calculator.makeAsArray()
+            amountLabel.text = "$ \(calculator.monthlyDeposits)"
         }
         
     }
@@ -71,7 +85,7 @@ class CalculatorViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setDelegates()
-
+        changeLabel()
         // Do any additional setup after loading the view.
     }
     
