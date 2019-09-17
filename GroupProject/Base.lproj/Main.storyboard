@@ -259,7 +259,7 @@ Payments</string>
                                     <constraint firstAttribute="height" constant="29" id="VnQ-YH-Nhm"/>
                                 </constraints>
                                 <connections>
-                                    <action selector="interestStepper:" destination="Z2k-Mo-fOj" eventType="valueChanged" id="xLi-dd-YSb"/>
+                                    <action selector="interestStepper:" destination="Z2k-Mo-fOj" eventType="valueChanged" id="VPb-74-Grf"/>
                                 </connections>
                             </stepper>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rcT-YG-Vy3">
@@ -336,7 +336,7 @@ Payments</string>
                         <outlet property="calculatorTableView" destination="gQi-7j-MCU" id="HQE-X1-4tC"/>
                         <outlet property="nextButton" destination="6nK-gT-QgY" id="TXy-pJ-VQH"/>
                         <outlet property="percentageLabel" destination="hEL-0N-u0B" id="POG-BO-hzx"/>
-                        <outlet property="stepper" destination="bJv-49-wg3" id="lz7-7o-9Bt"/>
+                        <outlet property="percentageStepper" destination="bJv-49-wg3" id="mdS-Tq-Nds"/>
                         <outlet property="userInputTextField" destination="rcT-YG-Vy3" id="KRr-HN-Iou"/>
                     </connections>
                 </viewController>
