@@ -44,12 +44,11 @@ class YearInputViewController: UIViewController {
       guard let destinationVC = segue.destination as? CalculatorViewController else {return}
       destinationVC.lengthOfTime = target - current
       destinationVC.mode = .total
-    destinationVC.LabelOne.text = "Total Amount"
+    
     case "monthlySegue":
       guard let destinationVC = segue.destination as? CalculatorViewController else {return}
       destinationVC.lengthOfTime = target - current
       destinationVC.mode = .monthly
-        destinationVC.LabelOne.text = "Monthly payments"
     default:
       fatalError("Unexpected segue identifier")
     }
