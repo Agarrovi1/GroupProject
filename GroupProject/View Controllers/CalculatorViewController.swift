@@ -116,7 +116,7 @@ extension CalculatorViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        return "Year                      Total Interst               Balance"
+        return "Year                      Total Interest              Balance"
     }
 }
 
