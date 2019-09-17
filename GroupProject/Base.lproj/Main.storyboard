@@ -170,7 +170,9 @@ Payments</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Percentage" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hEL-0N-u0B">
+
                                 <rect key="frame" x="20" y="304" width="200" height="35"/>
+
                                 <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="200" id="S7B-yC-lfU"/>
@@ -250,6 +252,18 @@ Payments</string>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
+
+                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="bJv-49-wg3">
+                                <rect key="frame" x="300" y="310" width="94" height="29"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="94" id="5lK-HB-3Ps"/>
+                                    <constraint firstAttribute="height" constant="29" id="VnQ-YH-Nhm"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="interestStepper:" destination="Z2k-Mo-fOj" eventType="valueChanged" id="VPb-74-Grf"/>
+                                </connections>
+                            </stepper>
+
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rcT-YG-Vy3">
                                 <rect key="frame" x="260" y="167.5" width="134" height="30"/>
                                 <constraints>
@@ -390,5 +404,7 @@ Payments</string>
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="796-Zb-Gdf"/>
+
+
     </inferredMetricsTieBreakers>
 </document>
