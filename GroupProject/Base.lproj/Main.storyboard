@@ -19,7 +19,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Current Age" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tmP-Gw-Kvp">
-                                <rect key="frame" x="20" y="139" width="134" height="35"/>
+                                <rect key="frame" x="20" y="183" width="134" height="35"/>
                                 <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="35" id="Arl-ed-AMT"/>
@@ -30,7 +30,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Target Age" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gD1-7K-P9K">
-                                <rect key="frame" x="260" y="139" width="134" height="35"/>
+                                <rect key="frame" x="260" y="183" width="134" height="35"/>
                                 <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="134" id="VUm-UH-esE"/>
@@ -43,7 +43,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PwC-J2-6HQ">
-                                <rect key="frame" x="39" y="194" width="97" height="30"/>
+                                <rect key="frame" x="39" y="238" width="97" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="97" id="SGZ-49-vOU"/>
                                     <constraint firstAttribute="height" constant="30" id="WAc-PE-Y0D"/>
@@ -53,7 +53,7 @@
                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="liP-MU-V6f">
-                                <rect key="frame" x="279" y="194" width="97" height="30"/>
+                                <rect key="frame" x="279" y="238" width="97" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="97" id="7Zk-dd-UKz"/>
                                     <constraint firstAttribute="height" constant="30" id="EtI-Ym-LCY"/>
@@ -65,7 +65,7 @@
                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="EZE-VM-3oI">
-                                <rect key="frame" x="20" y="417" width="134" height="70"/>
+                                <rect key="frame" x="20" y="461" width="134" height="70"/>
                                 <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="134" id="e4a-jQ-wt8"/>
@@ -82,7 +82,7 @@ Total</string>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="G0q-XM-kiM">
-                                <rect key="frame" x="260" y="417" width="134" height="70"/>
+                                <rect key="frame" x="260" y="461" width="134" height="70"/>
                                 <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="70" id="7E8-Ly-czc"/>
@@ -140,7 +140,7 @@ Payments</string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total Amount" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hRf-PL-xnW">
-                                <rect key="frame" x="20" y="121" width="134" height="35"/>
+                                <rect key="frame" x="20" y="165" width="134" height="35"/>
                                 <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="35" id="Ahv-Vf-KFy"/>
@@ -155,7 +155,7 @@ Payments</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Monthly" textAlignment="center" lineBreakMode="middleTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HsY-xT-aRw">
-                                <rect key="frame" x="20" y="193" width="134" height="35"/>
+                                <rect key="frame" x="20" y="237" width="134" height="35"/>
                                 <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="35" id="3Cc-Et-mXw"/>
@@ -170,7 +170,7 @@ Payments</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Percentage" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hEL-0N-u0B">
-                                <rect key="frame" x="20" y="260" width="134" height="35"/>
+                                <rect key="frame" x="20" y="304" width="134" height="35"/>
                                 <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="134" id="YnH-xe-6rq"/>
@@ -253,7 +253,7 @@ Payments</string>
                                 </prototypes>
                             </tableView>
                             <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="bJv-49-wg3">
-                                <rect key="frame" x="300" y="266" width="94" height="29"/>
+                                <rect key="frame" x="300" y="310" width="94" height="29"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="94" id="5lK-HB-3Ps"/>
                                     <constraint firstAttribute="height" constant="29" id="VnQ-YH-Nhm"/>
@@ -263,7 +263,7 @@ Payments</string>
                                 </connections>
                             </stepper>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rcT-YG-Vy3">
-                                <rect key="frame" x="260" y="123.5" width="134" height="30"/>
+                                <rect key="frame" x="260" y="167.5" width="134" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="134" id="DcP-wn-HRy"/>
                                     <constraint firstAttribute="height" constant="30" id="LYy-yd-qx8"/>
@@ -273,7 +273,7 @@ Payments</string>
                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Amount" textAlignment="center" lineBreakMode="middleTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fQG-K9-f70">
-                                <rect key="frame" x="260" y="193" width="134" height="35"/>
+                                <rect key="frame" x="260" y="237" width="134" height="35"/>
                                 <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="134" id="DMe-d8-k8W"/>
@@ -290,7 +290,7 @@ Payments</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6nK-gT-QgY">
-                                <rect key="frame" x="308" y="810" width="86" height="52"/>
+                                <rect key="frame" x="308" y="854" width="86" height="52"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="52" id="8BF-ay-CkS"/>
                                     <constraint firstAttribute="width" constant="86" id="IBJ-Rh-u1i"/>
@@ -353,7 +353,7 @@ Payments</string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="P7w-XW-1WV">
-                                <rect key="frame" x="20" y="64" width="374" height="747"/>
+                                <rect key="frame" x="20" y="108" width="374" height="703"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </tableView>
                         </subviews>
@@ -425,6 +425,6 @@ Payments</string>
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="796-Zb-Gdf"/>
-        <segue reference="3tz-NC-NcS"/>
+        <segue reference="oqg-ea-PT4"/>
     </inferredMetricsTieBreakers>
 </document>
