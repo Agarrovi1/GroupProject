@@ -114,10 +114,10 @@
 		6435E6CD232C2A1E00920334 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				6435E6D5232FEF3500920334 /* ChartViewController.swift */,
-				6435E6D3232FE72400920334 /* CalculatorViewController.swift */,
-				6435E6D1232FDB5A00920334 /* YearInputViewController.swift */,
 				4D8A5A43232C223200609C8F /* LaunchScreenController.swift */,
+				6435E6D1232FDB5A00920334 /* YearInputViewController.swift */,
+				6435E6D3232FE72400920334 /* CalculatorViewController.swift */,
+				6435E6D5232FEF3500920334 /* ChartViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
