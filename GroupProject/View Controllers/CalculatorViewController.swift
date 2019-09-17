@@ -65,11 +65,11 @@ class CalculatorViewController: UIViewController {
         
         switch mode {
         case .monthly:
-            var calculator = InterestCalculator.calculateFromMonthly(monthly: value, interestRate: percentageStepper.value, numOfYear: time)
+            var calculator = InterestCalculator.calculateFromMonthly(monthly: value, interestRate: percentageStepper.value/100, numOfYear: time)
             arrOfCalculations = calculator.makeAsArray()
             amountLabel.text = "$ \(calculator.goal)"
         case .total:
-            var calculator = InterestCalculator.calculateFromGoal(goal: value, interestRate: percentageStepper.value, numOfYear: time)
+            var calculator = InterestCalculator.calculateFromGoal(goal: value, interestRate: percentageStepper.value/100, numOfYear: time)
             arrOfCalculations = calculator.makeAsArray()
             amountLabel.text = "$ \(calculator.monthlyDeposits)"
         }
@@ -109,13 +109,15 @@ extension CalculatorViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = calculatorTableView.dequeueReusableCell(withIdentifier: "calcCell", for: indexPath) as? calcTableViewCell else {return UITableViewCell()}
         let yearlyCalculation = arrOfCalculations[indexPath.row]
-        cell.yearLabel.text = "Year: \(yearlyCalculation.year)"
-        cell.interestLabel.text = "Total Interest: \(yearlyCalculation.totalInterest)"
-        cell.balanceLabel.text = "Balance: \(yearlyCalculation.balance)"
+        cell.yearLabel.text = "\(yearlyCalculation.year)"
+        cell.interestLabel.text = "\(yearlyCalculation.totalInterest)"
+        cell.balanceLabel.text = "\(yearlyCalculation.balance)"
         return cell
     }
     
-    
+    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        return "Year                      Total Interst               Balance"
+    }
 }
 
 extension CalculatorViewController: UITextFieldDelegate {
