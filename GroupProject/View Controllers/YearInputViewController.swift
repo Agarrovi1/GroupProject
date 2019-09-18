@@ -24,9 +24,23 @@ class YearInputViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+//      currentAgeUserInputTextField.delegate = self
+//      targetAgeUserInputTextField.delegate = self
+//      calculateTotalButton.isEnabled = false
+//      calculateMothlyPaymentButton.isEnabled = false
+      
     }
   
+  
+//func checkInputs() {
+//  if let currentAgeUserInputTextField = currentAgeUserInputTextField.text, currentAgeUserInputTextField != "", let currentAge = Int(currentAgeUserInputTextField), let targetAgeUserInputTextField = targetAgeUserInputTextField.text, targetAgeUserInputTextField != "", let targetAge = Int(targetAgeUserInputTextField) {
+//    if targetAge - currentAge > 0 {
+//      calculateTotalButton.isEnabled = true
+//      calculateMothlyPaymentButton.isEnabled = true
+//      resignFirstResponder()
+//    }
+//  }
+//}
   
   
   override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -53,12 +67,13 @@ class YearInputViewController: UIViewController {
       fatalError("Unexpected segue identifier")
     }
   }
-  
-  
-  
 }
 
+
+//extension YearInputViewController: UITextFieldDelegate {
+//  func textFieldDidBeginEditing(_ textField: UITextField) {
+//    checkInputs()
+//  }
 //
-//guard let currentAgeUserInputTextField.text < targetAgeUserInputTextField.text else {fatalError("incorrect user input")}
-//
-//
+//}
+
