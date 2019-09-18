@@ -119,11 +119,14 @@ extension CalculatorViewController: UITableViewDataSource {
         guard let cell = calculatorTableView.dequeueReusableCell(withIdentifier: "calcCell", for: indexPath) as? calcTableViewCell else {return UITableViewCell()}
         let yearlyCalculation = arrOfCalculations[indexPath.row]
         cell.yearLabel.text = "\(yearlyCalculation.year)"
-        cell.interestLabel.text = "\(yearlyCalculation.totalInterest)"
-        cell.balanceLabel.text = "\(yearlyCalculation.balance)"
+        cell.interestLabel.text = "\(round(yearlyCalculation.totalInterest * 100) / 100)"
+        cell.balanceLabel.text = "\(round(yearlyCalculation.balance * 100) / 100)"
         return cell
     }
-    
+  
+//  (round(calculator.monthlyDeposits * 100) / 100)
+  
+  
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         return "Year                      Total Interest              Balance"
     }
