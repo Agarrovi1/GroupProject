@@ -58,10 +58,10 @@ class CalculatorViewController: UIViewController {
     }
     
     func makeNewCalculation() {
-        
-        guard let userInputTextField = userInputTextField.text else {return}
-        guard userInputTextField != "" else {return}
-        guard let value = Double(userInputTextField) else {return}
+        let filtered = userInputTextField.text?.replacingOccurrences(of: ",", with: "") //
+        guard let filteredInput = filtered else {return} //
+        guard filteredInput != "" else {return} //
+        guard let value = Double(filteredInput) else {return} //
         guard let time = lengthOfTime else {return}
         
         switch mode {
