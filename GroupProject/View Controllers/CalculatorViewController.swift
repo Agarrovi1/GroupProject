@@ -68,11 +68,11 @@ class CalculatorViewController: UIViewController {
         case .monthly:
             var calculator = InterestCalculator.calculateFromMonthly(monthly: value, interestRate: percentageStepper.value/100, numOfYear: time)
             arrOfCalculations = calculator.makeAsArray()
-            amountLabel.text = "$ \(round(calculator.goal * 100) / 100)"
+            amountLabel.text = "$" + numberFormatter(num: round(calculator.goal * 100) / 100)
         case .total:
             var calculator = InterestCalculator.calculateFromGoal(goal: value, interestRate: percentageStepper.value/100, numOfYear: time)
             arrOfCalculations = calculator.makeAsArray()
-            amountLabel.text = "$ \(round(calculator.monthlyDeposits * 100) / 100)"
+            amountLabel.text = "$" + numberFormatter(num: round(calculator.monthlyDeposits * 100) / 100)
         }
         
         
@@ -111,6 +111,15 @@ class CalculatorViewController: UIViewController {
 
 }
 extension CalculatorViewController: UITableViewDataSource {
+  func numberFormatter(num: Double) -> String {
+    let largeNumber = num
+    let numberFormatter = NumberFormatter()
+    numberFormatter.numberStyle = .decimal
+    guard let number = numberFormatter.string(from: NSNumber(value:largeNumber)) else {
+      return String()
+    }
+    return number
+  }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return arrOfCalculations.count
     }
@@ -119,8 +128,9 @@ extension CalculatorViewController: UITableViewDataSource {
         guard let cell = calculatorTableView.dequeueReusableCell(withIdentifier: "calcCell", for: indexPath) as? calcTableViewCell else {return UITableViewCell()}
         let yearlyCalculation = arrOfCalculations[indexPath.row]
         cell.yearLabel.text = "\(yearlyCalculation.year)"
-        cell.interestLabel.text = "\(round(yearlyCalculation.totalInterest * 100) / 100)"
-        cell.balanceLabel.text = "\(round(yearlyCalculation.balance * 100) / 100)"
+      
+        cell.interestLabel.text = "$" + numberFormatter(num: round(yearlyCalculation.totalInterest * 100) / 100)
+        cell.balanceLabel.text = "$" + numberFormatter(num: round(yearlyCalculation.balance * 100) / 100)
         return cell
     }
   
