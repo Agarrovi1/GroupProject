@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3CF0465E2332795500C6EC7B /* Cash.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 3CF0465D2332795500C6EC7B /* Cash.mp3 */; };
 		4D38637E232FF4C2009106C5 /* Interest Calculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D38637D232FF4C2009106C5 /* Interest Calculator.swift */; };
 		4D38638023302A18009106C5 /* Enum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D38637F23302A18009106C5 /* Enum.swift */; };
 		4D8A5A42232C223200609C8F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D8A5A41232C223200609C8F /* AppDelegate.swift */; };
@@ -32,6 +33,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3CF0465D2332795500C6EC7B /* Cash.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = Cash.mp3; path = ../../../../../../Downloads/Cash.mp3; sourceTree = "<group>"; };
 		4D38637D232FF4C2009106C5 /* Interest Calculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Interest Calculator.swift"; sourceTree = "<group>"; };
 		4D38637F23302A18009106C5 /* Enum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enum.swift; sourceTree = "<group>"; };
 		4D8A5A3E232C223200609C8F /* GroupProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GroupProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -134,6 +136,7 @@
 		6435E6CF232C2A7500920334 /* APIClient */ = {
 			isa = PBXGroup;
 			children = (
+				3CF0465D2332795500C6EC7B /* Cash.mp3 */,
 			);
 			path = APIClient;
 			sourceTree = "<group>";
@@ -228,6 +231,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4D8A5A4C232C223300609C8F /* LaunchScreen.storyboard in Resources */,
+				3CF0465E2332795500C6EC7B /* Cash.mp3 in Resources */,
 				4D8A5A49232C223300609C8F /* Assets.xcassets in Resources */,
 				4D8A5A47232C223200609C8F /* Main.storyboard in Resources */,
 			);
