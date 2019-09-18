@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import AVFoundation
 
 class YearInputViewController: UIViewController {
 
@@ -30,6 +31,19 @@ class YearInputViewController: UIViewController {
 //      calculateMothlyPaymentButton.isEnabled = false
       
     }
+  var player: AVAudioPlayer!
+
+  func playSound() {
+    let url = Bundle.main.url(forResource: "Cash", withExtension: "mp3")!
+    do {
+      player = try AVAudioPlayer(contentsOf: url)
+      guard let player = player else { return }
+      
+    } catch let error as Error {
+      print(error)
+    }
+    player.play()
+  }
   
   
 //func checkInputs() {
@@ -58,11 +72,13 @@ class YearInputViewController: UIViewController {
       guard let destinationVC = segue.destination as? CalculatorViewController else {return}
       destinationVC.lengthOfTime = target - current
       destinationVC.mode = .total
+      playSound()
     
     case "monthlySegue":
       guard let destinationVC = segue.destination as? CalculatorViewController else {return}
       destinationVC.lengthOfTime = target - current
       destinationVC.mode = .monthly
+      playSound()
     default:
       fatalError("Unexpected segue identifier")
     }
